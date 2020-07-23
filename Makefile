@@ -98,7 +98,7 @@ release:  ## Release
 	bin/fullrelease
 
 .PHONY: Clean
-clean:  ## Clean
-	git clean -Xdf
+clean:  ## Clean and keep var
+	git clean -xdf -e var
 
 .PHONY: all clean
